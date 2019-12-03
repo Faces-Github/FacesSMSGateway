@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <TextView android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose file action ..."
+        android:background="@color/rosybrown"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:id="@+id/actions"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/md_red_900"
+            android:text=""
+            android:id="@+id/no_records"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textAlignment="gravity"
+            android:layout_marginTop="18dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/openfile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="12dp"
+
+            android:text="Open file"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sharefile"
+            android:layout_below="@id/openfile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="12dp"
+            android:text="Share file"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actions"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:text="Exit"
+        android:backgroundTint="@color/salmon"
+        android:textColor="@color/black"
+        android:padding="0dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/exit"
+        />
+    </LinearLayout>
+</RelativeLayout>
